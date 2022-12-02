@@ -1,0 +1,142 @@
+/*//////////////////////////////////////////////////*/
+/************ --- TEACHER LOGIN PAGE --- ************/
+/*//////////////////////////////////////////////////*/
+
+body {
+    background-color: #e4e4e4;
+    width: 100%;
+    margin: 0%;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body a:link {
+    color: #ff6309;
+}
+
+.login-pages {
+    width: 40%;
+    height: 65%;
+    margin: auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.login-pages p {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.login-forms {
+    width: 400px;
+    margin: auto;
+    border: 1px inset #fff;
+    background-image: linear-gradient(#ccc, #ddd);
+    box-sizing: border-box;
+}
+
+.login-forms form {
+    margin-top: 70px;
+    box-sizing: border-box;
+}
+
+.login-forms form input {
+    width: 400px;
+    height: 25px;
+    margin-bottom: 10px;
+    border: 0px;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+#submit-l {
+    border: solid 1px #fff;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #ff6309, #f1b308);
+    width: 400px;
+    height: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+#submit-l:hover {
+    background-color: #333333;
+    color: #fff;
+}
+
+.login-extra-info p {
+    font-size: 00.75em;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+.login-extra-info a {
+    color: #ff6309;
+    text-decoration: none;
+    border-bottom: inset 0.2px #ff6309;
+}
+
+.back-home {
+    width: 45px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #333;
+    border: inset 0.1px aqua;
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.back-home a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.back-home a:hover { 
+    text-decoration: underline;
+}
+
+.back-home:hover {
+    background-color: #000;
+}
+
+/* --- RESPONSIVE --- */
+/*################### */
+@media only screen and (max-width: 400px) {
+    .login-pages {
+        width: 100%;
+        padding: 0 20px 0 15px;
+    }
+
+    .login-forms {
+        margin: 0 25px;
+    }
+    
+    .login-forms form {
+        margin-top: 50px;
+    }
+    
+    .login-forms form input {
+        width: 310px;
+        height: 20px;
+    }
+
+    #submit-l {
+        border: solid 1px #fff;
+        border-radius: 6px;
+        background-color: aqua;
+        width: 310px;
+        height: 20px;
+    }
+
+    .back-home {
+        position: relative;
+        left: 43%;
+    }
+}

@@ -1,0 +1,389 @@
+/*//////////////////////////////////////////////////*/
+/**************** --- CLASSES --- ****************/
+/*//////////////////////////////////////////////////*/
+
+/* --- BODY --- */
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+h6 {
+    display: none;
+}
+
+/* --- HEADER --- */
+.header {
+    width: 80%;
+    margin: auto;
+    border-top: solid 15px #333;
+    padding: 0 20px 15px 20px;
+    background-image: linear-gradient(to top, #333, #000);
+}
+
+.left-element {
+    padding-top: 10px;
+}
+
+.header .left-element #access-type {
+    color: #fff;
+}
+
+.header #class-access { /* Class Login */
+    color: #00ff00;
+}
+
+.header #class-access-personal { /* Remote Login */
+    color: #FFBF00;
+}
+
+.pulsating-circle { /* Class Login */
+    background: #00ff00;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+    margin-left: 150px;
+    margin-top: -14px;
+	box-shadow: 0 0 0 0 rgba(255, 255, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+  }
+
+  .pulsating-circle-personal { /* Remote Login */
+    background: #FFBF00;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+    margin-left: 150px;
+    margin-top: -14px;
+	box-shadow: 0 0 0 0 rgba(255, 255, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(196, 252, 124, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(165, 253, 165, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(218, 252, 212, 0);
+	}
+}
+
+.header .left-element #support {
+    margin: 45px 0 15px 0px;   
+}
+
+.header .left-element #support a {
+    color: #000;
+    background-color: aqua;
+    padding: 5px 15px 5px 15px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .left-element #support a:hover {
+    text-decoration: underline;
+    box-shadow: 0px 0px 5px 3px  #555;
+}
+
+.active-status {
+    color: #fff;
+    text-align: right;
+    font-size: 0.75em;
+    margin-top: -120px;
+}
+
+.active-status .user-status {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    color: pink;
+}
+
+.active-status .auth-para {
+    margin-top: -30px;
+}
+
+.active-status a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.active-status a:hover {
+    text-decoration: underline;
+}
+
+/* --- MENU ITEMS --- */
+.menu-items ul {
+    font-size: 0.75em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu-items ul li {
+    display: inline;
+    float: left;
+    padding-top: 20px;
+}
+
+.menu-items ul li a {
+    color: aqua;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.menu-items ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* --- BANNER --- */
+.challenge-main {
+    width: 83%;
+    margin: auto;
+}
+
+.challenge-banner {
+    height: 400px;
+    background-image: url(../images/fitness.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    width: 45%;
+    position: relative;
+    top: 70px;
+    left: 100px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #111;
+}
+
+#big-banner-text {
+    margin-block-start: 3px;
+    margin-block-end: 0px;
+    font-size: 3.5em;
+    font-family: Montserrat, Arial;
+    font-weight: bolder;
+}
+
+#small-banner-text {
+    font-size: 1.3em;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    margin-block-start: 3px;
+    color: #fff;
+    text-shadow: 0 0 4px orange;
+}
+
+#premium {
+    color: aqua;
+    font-weight: bold;
+}
+
+#premium-access {
+    margin-top: 20px;
+}
+
+#premium-access a {
+    text-decoration: none;
+}
+
+#premium-access #trial {
+    background-color: #C29D4F;
+    color: #000;
+    font-family: Montserrat, Arial;
+    font-weight: bold;
+    padding: 12px;
+    border: solid 1px #333;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#premium-access #trial:hover {
+    opacity: 0.7;
+    color: #fff;
+}
+
+#premium-access #signin {
+    background-color: #333;
+    color: #fff;
+    font-family: Montserrat, Arial;
+    font-weight: bold;
+    padding: 12px;
+    border: solid 1px #C29D4F;
+    border-radius: 5px;
+}
+
+#premium-access #signin:hover {
+    opacity: 0.7;
+    color: #C29D4F;
+}
+
+/* --- CHALLENGES LIST --- */
+.challenges-all h1 {
+    color: #C29D4F;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.challenges-all ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+.challenges-all ul li {
+    display: inline;
+    margin: 30px;
+    padding: 10px 20px 10px 20px;
+    border: solid 1px #333;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #C29D4F, #000);
+    font-weight: bold;
+}
+
+.challenges-all ul li:hover {
+    background-image: linear-gradient(to bottom, aqua, #000);
+}
+
+.challenges-all ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --- CLASSES GRID --- */
+.classes-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.classes-grid-items {
+    border: solid 1px #333;
+    border-radius: 10px;
+}
+
+.classes-grid-items p {
+    padding: 10px 0 10px 0;
+}
+
+.classes-grid-items .time-left {
+    height: 10px;
+    color: #fff;
+    background-color: #C29D4F;
+    margin: 0%;
+    padding-left: 10px;
+    border: 0px;
+    border-radius: 10px 10px 0 0;
+    font-size: 0.75em;
+}
+
+.indentation {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.classes-grid-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-block-end: 0%;
+}
+
+.classes-grid-items hr {
+    color: #c4c4c4;
+}
+
+.classes-grid-items .down {
+    margin-top: -10px;
+}
+
+.classes-date {
+    color: #C29D4F;
+    font-size: 0.75em;
+    margin-top: -10px;
+}
+
+.responsibility {
+    margin-block-start: 0%;
+    color: #777;
+    line-height: 1.5em;
+}
+
+.responsibility .who-name, .who-msg {
+    font-size: 0.75em;
+}
+
+.responsibility .who-name a, .who-msg a {
+    color: aqua;
+}
+
+.responsibility .who-msg a {
+    float: right;
+    text-decoration: none;
+}
+
+.classes-description {
+    line-height: 1.3em;
+}
+
+.desc-title {
+    color: #777;
+}
+
+.desc-text {
+    font-size: 0.85em;
+}
+
+.classes-join a {
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, aqua, #000);
+    border: 0.5px solid #333;
+    border-radius: 7px;
+    text-align: center;
+    padding: 10px 76px 10px 76px;
+}
+
+.classes-join a:hover {
+    background-image: linear-gradient(to top, #000, #777);
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+    width: 83%;
+    margin: auto;
+    padding: 0;
+    color: #fff;
+    background-image: linear-gradient(to top, #000, #333);
+}
+
+.footer ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.footer ul li {
+    display: inline;
+    border-right: 1px solid #fff;
+}
